@@ -1,12 +1,13 @@
+'use client';
+
 import React from 'react';
-import Link from 'next/link';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans">
       {/* Top Announcement Bar */}
       <div className="bg-emerald-600/20 text-emerald-400 text-xs sm:text-sm py-2 text-center border-b border-emerald-500/20 font-medium">
-        🚀 New Feature: Automatic Google Calendar & Live Order Sync is now live!
+        🚀 New Feature: Automatic Google Calendar &amp; Live Order Sync is now live!
       </div>
 
       {/* Navigation Header */}
@@ -17,17 +18,16 @@ export default function Home() {
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
           <a href="#features" className="hover:text-emerald-400 transition-colors">Features</a>
           <a href="#how-it-works" className="hover:text-emerald-400 transition-colors">How It Works</a>
-          <a href="#pricing" className="hover:text-emerald-400 transition-colors">Pricing</a>
         </div>
         <div className="flex items-center gap-4">
           <a 
-            href="https://app.techrobotes.io/login" 
+            href="https://app.techrobotes.io" 
             className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
           >
             Log In
           </a>
           <a 
-            href="https://app.techrobotes.io/register" 
+            href="https://app.techrobotes.io" 
             className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition-all shadow-lg shadow-emerald-500/20"
           >
             Launch App
@@ -42,14 +42,14 @@ export default function Home() {
             Complete WhatsApp AI SaaS
           </span>
           <h1 className="text-4xl sm:text-6xl font-black text-white leading-tight mb-6">
-            Automate 80% of Support, <span className="text-emerald-400">Bookings & Sales</span> on WhatsApp
+            Automate 80% of Support, <span className="text-emerald-400">Bookings &amp; Sales</span> on WhatsApp
           </h1>
           <p className="text-lg text-slate-400 mb-8 max-w-xl mx-auto lg:mx-0">
             Deploy custom AI chatbots on WhatsApp Business. Schedule appointments, process restaurant orders, and hand over complex chats to live human agents effortlessly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a 
-              href="https://app.techrobotes.io/register" 
+              href="https://app.techrobotes.io" 
               className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-8 py-4 rounded-xl text-base transition-all text-center shadow-xl shadow-emerald-500/25"
             >
               Start Free Trial
@@ -81,7 +81,7 @@ export default function Home() {
               Hello! Welcome to TechRobotes. How can I assist your business today?
             </div>
             <div className="bg-emerald-600/30 border border-emerald-500/30 rounded-2xl p-3 max-w-[80%] ml-auto text-emerald-100">
-              I'd like to book a dinner table for 4 people at 8 PM.
+              I&apos;d like to book a dinner table for 4 people at 8 PM.
             </div>
             <div className="bg-slate-800/80 rounded-2xl p-3 max-w-[80%] text-slate-200">
               ✅ Table for 4 confirmed for 8:00 PM tonight! Your calendar invite and SMS confirmation have been sent.
@@ -111,7 +111,7 @@ export default function Home() {
             <div className="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 text-2xl font-bold mb-6">
               📅
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">Calendar & Appointments</h3>
+            <h3 className="text-xl font-bold text-white mb-3">Calendar &amp; Appointments</h3>
             <p className="text-slate-400 text-sm leading-relaxed">
               Automate appointment bookings, clinic schedules, or client calls with real-time calendar synchronization and WhatsApp reminders.
             </p>
@@ -122,7 +122,7 @@ export default function Home() {
             <div className="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center text-emerald-400 text-2xl font-bold mb-6">
               🍔
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">Restaurant & E-Commerce</h3>
+            <h3 className="text-xl font-bold text-white mb-3">Restaurant &amp; E-Commerce</h3>
             <p className="text-slate-400 text-sm leading-relaxed">
               Show interactive menus, take food orders, process item catalogs, and manage delivery confirmations directly inside WhatsApp.
             </p>
@@ -160,7 +160,7 @@ export default function Home() {
             </div>
             <div className="p-6">
               <div className="text-4xl font-black text-emerald-500 mb-4">03</div>
-              <h4 className="text-lg font-bold text-white mb-2">Automate & Convert</h4>
+              <h4 className="text-lg font-bold text-white mb-2">Automate &amp; Convert</h4>
               <p className="text-slate-400 text-sm">Sit back as your AI answers inquiries, takes orders, and schedules bookings 24/7.</p>
             </div>
           </div>
@@ -177,7 +177,7 @@ export default function Home() {
             Start your free trial today and experience full WhatsApp automation with calendar sync, live agent routing, and e-commerce features.
           </p>
           <a 
-            href="https://app.techrobotes.io/register" 
+            href="https://app.techrobotes.io" 
             className="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-10 py-4 rounded-xl text-base transition-all shadow-xl shadow-emerald-500/25"
           >
             Get Started Now
@@ -187,7 +187,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t border-slate-900 py-8 text-center text-xs text-slate-500">
-        <p>&copy; {new Date().getFullYear()} TechRobotes.io. All rights reserved.</p>
+        <p>© 2026 TechRobotes.io. All rights reserved.</p>
       </footer>
     </div>
   );
