@@ -39,13 +39,16 @@ export default function FeaturesPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans pb-20">
       {/* Navigation Header */}
-      <nav className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between border-b border-slate-800/60">
+      <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between border-b border-slate-800/60">
         <a href="/" className="flex items-center gap-3">
           <img 
             src="/logo.png" 
             alt="TechRobotes Logo" 
-            className="h-10 w-auto object-contain" 
+            className="h-12 w-auto object-contain mix-blend-screen drop-shadow-[0_0_12px_rgba(16,185,129,0.3)]" 
           />
+          <span className="text-xl font-black text-white tracking-tight hidden sm:inline">
+            <span className="text-emerald-400">TechRobotes</span>.io
+          </span>
         </a>
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
           <a href="/features" className="text-emerald-400 font-bold">Features</a>
