@@ -12,11 +12,11 @@ export default function Home() {
 
       {/* Navigation Header */}
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between border-b border-slate-800/60">
-        <a href="/" className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-3 group">
           <img 
             src="/logo.png" 
             alt="TechRobotes Logo" 
-            className="h-14 w-auto object-contain brightness-125 contrast-125 drop-shadow-[0_0_12px_rgba(16,185,129,0.5)] transition-transform hover:scale-105" 
+            className="h-16 w-auto object-contain brightness-130 contrast-125 drop-shadow-[0_0_16px_rgba(16,185,129,0.7)] group-hover:scale-105 transition-all" 
           />
           <span className="text-xl sm:text-2xl font-black text-white tracking-tight hidden sm:inline">
             <span className="text-emerald-400">TechRobotes</span>.io
