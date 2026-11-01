@@ -4,8 +4,36 @@ import React from 'react';
 import Link from 'next/link';
 
 export default function Home() {
+  // SoftwareApplication JSON-LD Schema for Google Search Indexing
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'TechRobotes.io',
+    operatingSystem: 'All',
+    applicationCategory: 'BusinessApplication',
+    description: 'WhatsApp AI automation platform for customer support, appointment bookings, voice note intelligence, and e-commerce orders.',
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'USD',
+      lowPrice: '18.00',
+      highPrice: '140.00',
+      offerCount: '4',
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '48',
+    },
+  };
+
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans flex flex-col justify-between selection:bg-emerald-500 selection:text-slate-950">
+      {/* Invisible JSON-LD Schema Script Tag for Google */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <div>
         {/* Top Announcement Bar */}
         <div className="bg-emerald-600/20 text-emerald-400 text-xs sm:text-sm py-2 text-center border-b border-emerald-500/20 font-medium">
