@@ -81,8 +81,8 @@ export default function PricingPage() {
     {
       name: 'Diamond',
       badge: 'Enterprise & Agencies',
-      monthlyPrice: 135,
-      annualPrice: 115,
+      monthlyPrice: 140,
+      annualPrice: 120,
       description: 'Top-tier reasoning power (Max AI) for multi-branch brands and agencies.',
       credits: '90,000',
       models: 'Basic + Pro + Max AI Models',
@@ -112,7 +112,7 @@ export default function PricingPage() {
           <img 
             src="/logo.png" 
             alt="TechRobotes Logo" 
-            className="h-12 w-auto object-contain mix-blend-screen drop-shadow-[0_0_12px_rgba(16,185,129,0.3)]" 
+            className="h-11 w-auto object-contain mix-blend-screen hue-rotate-[90deg] saturate-150 brightness-110 drop-shadow-[0_0_10px_rgba(16,185,129,0.4)]" 
           />
           <span className="text-xl font-black text-white tracking-tight hidden sm:inline">
             <span className="text-emerald-400">TechRobotes</span>.io

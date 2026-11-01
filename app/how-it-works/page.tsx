@@ -34,7 +34,7 @@ export default function HowItWorksPage() {
           <img 
             src="/logo.png" 
             alt="TechRobotes Logo" 
-            className="h-12 w-auto object-contain mix-blend-screen drop-shadow-[0_0_12px_rgba(16,185,129,0.3)]" 
+            className="h-11 w-auto object-contain mix-blend-screen hue-rotate-[90deg] saturate-150 brightness-110 drop-shadow-[0_0_10px_rgba(16,185,129,0.4)]" 
           />
           <span className="text-xl font-black text-white tracking-tight hidden sm:inline">
             <span className="text-emerald-400">TechRobotes</span>.io
