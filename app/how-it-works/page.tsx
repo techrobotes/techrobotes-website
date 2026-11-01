@@ -31,11 +31,35 @@ export default function HowItWorksPage() {
       {/* Navigation Header */}
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between border-b border-slate-800/60">
         <a href="/" className="flex items-center gap-3">
-          <img 
-            src="/logo.png" 
-            alt="TechRobotes Logo" 
-            className="h-11 w-auto object-contain mix-blend-screen hue-rotate-[90deg] saturate-150 brightness-110 drop-shadow-[0_0_10px_rgba(16,185,129,0.4)]" 
-          />
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 100 100" 
+            className="h-10 w-auto filter drop-shadow-[0_0_8px_rgba(16,185,129,0.5)]"
+          >
+            <path 
+              d="M15 25 L85 25" 
+              stroke="#10B981" 
+              strokeWidth="8" 
+              strokeLinecap="round" 
+            />
+            <path 
+              d="M15 25 L35 80" 
+              stroke="#10B981" 
+              strokeWidth="8" 
+              strokeLinecap="round" 
+            />
+            <path 
+              d="M38 45 Q50 25, 75 42 Q85 58, 65 72 L85 90" 
+              fill="none" 
+              stroke="#10B981" 
+              strokeWidth="8" 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+            />
+            <circle cx="50" cy="40" r="4" fill="#06F293" />
+            <circle cx="65" cy="55" r="4" fill="#06F293" />
+            <path d="M42 45 L58 45 L52 55 L68 55" stroke="#06F293" strokeWidth="3" strokeLinecap="round" />
+          </svg>
           <span className="text-xl font-black text-white tracking-tight hidden sm:inline">
             <span className="text-emerald-400">TechRobotes</span>.io
           </span>
