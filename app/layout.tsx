@@ -19,7 +19,10 @@ export const metadata: Metadata = {
     'WhatsApp SaaS Platform',
   ],
   icons: {
-    icon: '/logo.png',
+    icon: [
+      { url: '/logo.png' },
+      { url: '/favicon.ico' },
+    ],
     shortcut: '/logo.png',
     apple: '/logo.png',
   },
