@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 export default function PricingPage() {
   const [isAnnual, setIsAnnual] = useState(false);
@@ -109,7 +110,7 @@ export default function PricingPage() {
       <div>
         {/* Navigation Header */}
         <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between border-b border-slate-800/60 w-full">
-          <a href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group">
             <img 
               src="/logo.png" 
               alt="TechRobotes Logo" 
@@ -118,12 +119,12 @@ export default function PricingPage() {
             <span className="text-xl sm:text-2xl font-black text-white tracking-tight hidden sm:inline">
               <span className="text-emerald-400">TechRobotes</span>.io
             </span>
-          </a>
+          </Link>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-            <a href="/features" className="hover:text-emerald-400 transition-colors">Features</a>
-            <a href="/how-it-works" className="hover:text-emerald-400 transition-colors">How It Works</a>
-            <a href="/pricing" className="text-emerald-400 font-bold">Pricing</a>
-            <a href="/contact" className="hover:text-emerald-400 transition-colors">Contact Us</a>
+            <Link href="/features" className="hover:text-emerald-400 transition-colors">Features</Link>
+            <Link href="/how-it-works" className="hover:text-emerald-400 transition-colors">How It Works</Link>
+            <Link href="/pricing" className="text-emerald-400 font-bold">Pricing</Link>
+            <Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact Us</Link>
           </div>
           <a 
             href="https://app.techrobotes.io" 
@@ -150,7 +151,7 @@ export default function PricingPage() {
             <span className={`text-sm font-medium ${!isAnnual ? 'text-white' : 'text-slate-400'}`}>Monthly Billing</span>
             <button 
               onClick={() => setIsAnnual(!isAnnual)}
-              className="w-14 h-8 bg-slate-800 rounded-full p-1 transition-colors relative border border-slate-700"
+              className="w-14 h-8 bg-slate-800 rounded-full p-1 transition-colors relative border border-slate-700 cursor-pointer"
             >
               <div className={`w-6 h-6 bg-emerald-500 rounded-full transition-transform ${isAnnual ? 'translate-x-6' : 'translate-x-0'}`} />
             </button>
@@ -162,7 +163,7 @@ export default function PricingPage() {
 
         {/* Free Trial Banner */}
         <div className="max-w-7xl mx-auto px-6 mt-12">
-          <div className="bg-slate-900/80 border border-emerald-500/30 rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-4 shadow-lg">
+          <div className="bg-slate-900/80 border border-emerald-500/30 rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-4 shadow-lg text-left">
             <div>
               <div className="flex items-center gap-2">
                 <span className="bg-emerald-500/20 text-emerald-400 text-xs font-bold px-2.5 py-0.5 rounded-full">14-DAY TRIAL</span>
@@ -183,7 +184,7 @@ export default function PricingPage() {
 
         {/* Plans Cards */}
         <main className="pb-20">
-          <div className="max-w-7xl mx-auto px-6 mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+          <div className="max-w-7xl mx-auto px-6 mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch text-left">
             {plans.map((plan) => (
               <div 
                 key={plan.name}
@@ -258,7 +259,7 @@ export default function PricingPage() {
 
                 <a 
                   href="https://app.techrobotes.io" 
-                  className={`mt-8 w-full py-3 rounded-xl font-bold text-sm text-center transition-all ${
+                  className={`mt-8 w-full py-3 rounded-xl font-bold text-sm text-center transition-all block ${
                     plan.popular 
                       ? 'bg-emerald-500 hover:bg-emerald-400 text-slate-950 shadow-lg shadow-emerald-500/20' 
                       : 'bg-slate-800 hover:bg-slate-700 text-white border border-slate-700'
@@ -277,15 +278,15 @@ export default function PricingPage() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>&copy; 2026 TechRobotes. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-slate-300 transition-colors">
+            <Link href="/privacy" className="hover:text-slate-300 transition-colors">
               Privacy Policy
-            </a>
-            <a href="/" className="hover:text-slate-300 transition-colors">
+            </Link>
+            <Link href="/terms" className="hover:text-slate-300 transition-colors">
               Terms of Service
-            </a>
-            <a href="/contact" className="hover:text-slate-300 transition-colors">
+            </Link>
+            <Link href="/contact" className="hover:text-slate-300 transition-colors">
               Support
-            </a>
+            </Link>
           </div>
         </div>
       </footer>

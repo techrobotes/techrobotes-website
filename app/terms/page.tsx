@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function TermsPage() {
   return (
@@ -8,7 +9,7 @@ export default function TermsPage() {
       <div>
         {/* Navigation Header */}
         <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between border-b border-slate-800/60 w-full">
-          <a href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group">
             <img 
               src="/logo.png" 
               alt="TechRobotes Logo" 
@@ -17,12 +18,12 @@ export default function TermsPage() {
             <span className="text-xl sm:text-2xl font-black text-white tracking-tight hidden sm:inline">
               <span className="text-emerald-400">TechRobotes</span>.io
             </span>
-          </a>
+          </Link>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-            <a href="/features" className="hover:text-emerald-400 transition-colors">Features</a>
-            <a href="/how-it-works" className="hover:text-emerald-400 transition-colors">How It Works</a>
-            <a href="/pricing" className="hover:text-emerald-400 transition-colors">Pricing</a>
-            <a href="/contact" className="hover:text-emerald-400 transition-colors">Contact Us</a>
+            <Link href="/features" className="hover:text-emerald-400 transition-colors">Features</Link>
+            <Link href="/how-it-works" className="hover:text-emerald-400 transition-colors">How It Works</Link>
+            <Link href="/pricing" className="hover:text-emerald-400 transition-colors">Pricing</Link>
+            <Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact Us</Link>
           </div>
           <a 
             href="https://app.techrobotes.io" 
@@ -33,7 +34,7 @@ export default function TermsPage() {
         </nav>
 
         {/* Main Terms of Service Content */}
-        <main className="max-w-4xl mx-auto px-6 py-16 flex-1">
+        <main className="max-w-4xl mx-auto px-6 py-16 flex-1 text-left">
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-2">Terms of Service</h1>
           <p className="text-slate-400 text-xs mb-8">Last Updated: November 2026</p>
 
@@ -86,15 +87,15 @@ export default function TermsPage() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>&copy; 2026 TechRobotes. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="/privacy" className="hover:text-slate-300 transition-colors">
+            <Link href="/privacy" className="hover:text-slate-300 transition-colors">
               Privacy Policy
-            </a>
-            <a href="/terms" className="text-slate-300 transition-colors font-semibold">
+            </Link>
+            <Link href="/terms" className="text-slate-300 transition-colors font-semibold">
               Terms of Service
-            </a>
-            <a href="/contact" className="hover:text-slate-300 transition-colors">
+            </Link>
+            <Link href="/contact" className="hover:text-slate-300 transition-colors">
               Support
-            </a>
+            </Link>
           </div>
         </div>
       </footer>

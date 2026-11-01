@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
 
         {/* Navigation Header */}
         <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between border-b border-slate-800/60 w-full">
-          <a href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group">
             <img 
               src="/logo.png" 
               alt="TechRobotes Logo" 
@@ -22,12 +23,12 @@ export default function Home() {
             <span className="text-xl sm:text-2xl font-black text-white tracking-tight hidden sm:inline">
               <span className="text-emerald-400">TechRobotes</span>.io
             </span>
-          </a>
+          </Link>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-            <a href="/features" className="hover:text-emerald-400 transition-colors">Features</a>
-            <a href="/how-it-works" className="hover:text-emerald-400 transition-colors">How It Works</a>
-            <a href="/pricing" className="hover:text-emerald-400 transition-colors">Pricing</a>
-            <a href="/contact" className="hover:text-emerald-400 transition-colors">Contact Us</a>
+            <Link href="/features" className="hover:text-emerald-400 transition-colors">Features</Link>
+            <Link href="/how-it-works" className="hover:text-emerald-400 transition-colors">How It Works</Link>
+            <Link href="/pricing" className="hover:text-emerald-400 transition-colors">Pricing</Link>
+            <Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact Us</Link>
           </div>
           <div className="flex items-center gap-4">
             <a 
@@ -64,12 +65,12 @@ export default function Home() {
               >
                 Start Free Trial
               </a>
-              <a 
+              <Link 
                 href="/features" 
                 className="bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-200 font-semibold px-8 py-4 rounded-xl text-base transition-all text-center"
               >
                 Explore Capabilities
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -86,7 +87,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="space-y-3 text-xs sm:text-sm">
+            <div className="space-y-3 text-xs sm:text-sm text-left">
               <div className="bg-slate-800/80 rounded-2xl p-3 max-w-[80%] text-slate-200">
                 Hello! Welcome to TechRobotes. How can I assist your business today?
               </div>
@@ -116,17 +117,17 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl">
+            <div className="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl text-left">
               <div className="text-3xl mb-4">📅</div>
               <h3 className="text-xl font-bold text-white mb-2">Appointment Booking</h3>
               <p className="text-slate-400 text-sm">Synchronize bookings, clinic slots, and client schedules automatically inside WhatsApp.</p>
             </div>
-            <div className="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl">
+            <div className="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl text-left">
               <div className="text-3xl mb-4">🎙️</div>
               <h3 className="text-xl font-bold text-white mb-2">Voice Note Intelligence</h3>
               <p className="text-slate-400 text-sm">Transcribe incoming customer voice notes automatically and process replies with full context.</p>
             </div>
-            <div className="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl">
+            <div className="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl text-left">
               <div className="text-3xl mb-4">🍔</div>
               <h3 className="text-xl font-bold text-white mb-2">Food Menus &amp; Catalog Orders</h3>
               <p className="text-slate-400 text-sm">Display visual menus, calculate order totals, and capture delivery details seamlessly.</p>
@@ -149,15 +150,15 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>&copy; 2026 TechRobotes. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-slate-300 transition-colors">
+            <Link href="/privacy" className="hover:text-slate-300 transition-colors">
               Privacy Policy
-            </a>
-            <a href="/" className="hover:text-slate-300 transition-colors">
+            </Link>
+            <Link href="/terms" className="hover:text-slate-300 transition-colors">
               Terms of Service
-            </a>
-            <a href="/contact" className="hover:text-slate-300 transition-colors">
+            </Link>
+            <Link href="/contact" className="hover:text-slate-300 transition-colors">
               Support
-            </a>
+            </Link>
           </div>
         </div>
       </footer>

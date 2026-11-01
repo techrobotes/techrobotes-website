@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function FeaturesPage() {
   const featureList = [
@@ -38,10 +39,10 @@ export default function FeaturesPage() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans flex flex-col justify-between selection:bg-emerald-500 selection:text-slate-950">
-      {/* Navigation Header */}
       <div>
+        {/* Navigation Header */}
         <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between border-b border-slate-800/60 w-full">
-          <a href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group">
             <img 
               src="/logo.png" 
               alt="TechRobotes Logo" 
@@ -50,12 +51,12 @@ export default function FeaturesPage() {
             <span className="text-xl sm:text-2xl font-black text-white tracking-tight hidden sm:inline">
               <span className="text-emerald-400">TechRobotes</span>.io
             </span>
-          </a>
+          </Link>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-            <a href="/features" className="text-emerald-400 font-bold">Features</a>
-            <a href="/how-it-works" className="hover:text-emerald-400 transition-colors">How It Works</a>
-            <a href="/pricing" className="hover:text-emerald-400 transition-colors">Pricing</a>
-            <a href="/contact" className="hover:text-emerald-400 transition-colors">Contact Us</a>
+            <Link href="/features" className="text-emerald-400 font-bold">Features</Link>
+            <Link href="/how-it-works" className="hover:text-emerald-400 transition-colors">How It Works</Link>
+            <Link href="/pricing" className="hover:text-emerald-400 transition-colors">Pricing</Link>
+            <Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact Us</Link>
           </div>
           <a 
             href="https://app.techrobotes.io" 
@@ -74,7 +75,7 @@ export default function FeaturesPage() {
             </p>
           </div>
 
-          <div className="max-w-7xl mx-auto px-6 mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="max-w-7xl mx-auto px-6 mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
             {featureList.map((item, idx) => (
               <div key={idx} className="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl hover:border-emerald-500/40 transition-colors">
                 <div className="text-4xl mb-6">{item.icon}</div>
@@ -86,20 +87,20 @@ export default function FeaturesPage() {
         </main>
       </div>
 
-      {/* Footer Section - Added Matching Footer */}
+      {/* Footer Section */}
       <footer className="w-full border-t border-slate-800/60 bg-slate-950 py-8">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>&copy; 2026 TechRobotes. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-slate-300 transition-colors">
+            <Link href="/privacy" className="hover:text-slate-300 transition-colors">
               Privacy Policy
-            </a>
-            <a href="/" className="hover:text-slate-300 transition-colors">
+            </Link>
+            <Link href="/terms" className="hover:text-slate-300 transition-colors">
               Terms of Service
-            </a>
-            <a href="/contact" className="hover:text-slate-300 transition-colors">
+            </Link>
+            <Link href="/contact" className="hover:text-slate-300 transition-colors">
               Support
-            </a>
+            </Link>
           </div>
         </div>
       </footer>

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function HowItWorksPage() {
   const steps = [
@@ -31,7 +32,7 @@ export default function HowItWorksPage() {
       <div>
         {/* Navigation Header */}
         <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between border-b border-slate-800/60 w-full">
-          <a href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group">
             <img 
               src="/logo.png" 
               alt="TechRobotes Logo" 
@@ -40,12 +41,12 @@ export default function HowItWorksPage() {
             <span className="text-xl sm:text-2xl font-black text-white tracking-tight hidden sm:inline">
               <span className="text-emerald-400">TechRobotes</span>.io
             </span>
-          </a>
+          </Link>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-            <a href="/features" className="hover:text-emerald-400 transition-colors">Features</a>
-            <a href="/how-it-works" className="text-emerald-400 font-bold">How It Works</a>
-            <a href="/pricing" className="hover:text-emerald-400 transition-colors">Pricing</a>
-            <a href="/contact" className="hover:text-emerald-400 transition-colors">Contact Us</a>
+            <Link href="/features" className="hover:text-emerald-400 transition-colors">Features</Link>
+            <Link href="/how-it-works" className="text-emerald-400 font-bold">How It Works</Link>
+            <Link href="/pricing" className="hover:text-emerald-400 transition-colors">Pricing</Link>
+            <Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact Us</Link>
           </div>
           <a 
             href="https://app.techrobotes.io" 
@@ -62,10 +63,10 @@ export default function HowItWorksPage() {
             <p className="text-slate-400 text-base sm:text-lg">Deploy your customized WhatsApp AI assistant in 4 streamlined steps.</p>
           </div>
 
-          <div className="max-w-5xl mx-auto px-6 mt-16 space-y-8">
+          <div className="max-w-5xl mx-auto px-6 mt-16 space-y-8 text-left">
             {steps.map((item, idx) => (
               <div key={idx} className="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl flex flex-col md:flex-row items-start md:items-center gap-6 hover:border-emerald-500/40 transition-colors">
-                <div className="text-4xl font-black text-emerald-500 bg-emerald-500/10 px-6 py-3 rounded-2xl border border-emerald-500/20">
+                <div className="text-4xl font-black text-emerald-500 bg-emerald-500/10 px-6 py-3 rounded-2xl border border-emerald-500/25 shrink-0">
                   {item.step}
                 </div>
                 <div>
@@ -83,15 +84,15 @@ export default function HowItWorksPage() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>&copy; 2026 TechRobotes. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-slate-300 transition-colors">
+            <Link href="/privacy" className="hover:text-slate-300 transition-colors">
               Privacy Policy
-            </a>
-            <a href="/" className="hover:text-slate-300 transition-colors">
+            </Link>
+            <Link href="/terms" className="hover:text-slate-300 transition-colors">
               Terms of Service
-            </a>
-            <a href="/contact" className="hover:text-slate-300 transition-colors">
+            </Link>
+            <Link href="/contact" className="hover:text-slate-300 transition-colors">
               Support
-            </a>
+            </Link>
           </div>
         </div>
       </footer>

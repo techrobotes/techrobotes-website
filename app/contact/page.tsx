@@ -1,13 +1,14 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans flex flex-col justify-between selection:bg-emerald-500 selection:text-slate-950">
-      {/* Navigation Header - Matches Features Page Exactly */}
+      {/* Navigation Header */}
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between border-b border-slate-800/60 w-full">
-        <a href="/" className="flex items-center gap-3 group">
+        <Link href="/" className="flex items-center gap-3 group">
           <img 
             src="/logo.png" 
             alt="TechRobotes Logo" 
@@ -16,12 +17,12 @@ export default function ContactPage() {
           <span className="text-xl sm:text-2xl font-black text-white tracking-tight hidden sm:inline">
             <span className="text-emerald-400">TechRobotes</span>.io
           </span>
-        </a>
+        </Link>
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-          <a href="/features" className="hover:text-emerald-400 transition-colors">Features</a>
-          <a href="/how-it-works" className="hover:text-emerald-400 transition-colors">How It Works</a>
-          <a href="/pricing" className="hover:text-emerald-400 transition-colors">Pricing</a>
-          <a href="/contact" className="text-emerald-400 font-bold">Contact Us</a>
+          <Link href="/features" className="hover:text-emerald-400 transition-colors">Features</Link>
+          <Link href="/how-it-works" className="hover:text-emerald-400 transition-colors">How It Works</Link>
+          <Link href="/pricing" className="hover:text-emerald-400 transition-colors">Pricing</Link>
+          <Link href="/contact" className="text-emerald-400 font-bold">Contact Us</Link>
         </div>
         <a 
           href="https://app.techrobotes.io" 
@@ -33,7 +34,7 @@ export default function ContactPage() {
 
       {/* Main Content Area */}
       <main className="flex-1 flex items-center justify-center p-6 my-12">
-        <div className="max-w-md w-full bg-slate-900 border border-slate-800 rounded-2xl p-8 space-y-6 shadow-xl">
+        <div className="max-w-md w-full bg-slate-900 border border-slate-800 rounded-2xl p-8 space-y-6 shadow-xl text-left">
           <h1 className="text-3xl font-bold text-center text-white">Get in Touch</h1>
           <p className="text-slate-400 text-center text-sm">
             Have custom enterprise requirements or setup questions? Contact our technical team.
@@ -74,7 +75,7 @@ export default function ContactPage() {
           {/* Dashboard CTA */}
           <a
             href="https://app.techrobotes.io"
-            className="w-full block text-center bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 px-4 rounded-xl transition-all shadow-lg hover:shadow-emerald-500/20"
+            className="w-full block text-center bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 px-4 rounded-xl transition-all shadow-lg shadow-emerald-500/20"
           >
             Access Platform Dashboard
           </a>
@@ -86,15 +87,15 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>&copy; 2026 TechRobotes. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-slate-300 transition-colors">
+            <Link href="/privacy" className="hover:text-slate-300 transition-colors">
               Privacy Policy
-            </a>
-            <a href="/" className="hover:text-slate-300 transition-colors">
+            </Link>
+            <Link href="/terms" className="hover:text-slate-300 transition-colors">
               Terms of Service
-            </a>
-            <a href="/contact" className="hover:text-slate-300 transition-colors">
+            </Link>
+            <Link href="/contact" className="hover:text-slate-300 transition-colors">
               Support
-            </a>
+            </Link>
           </div>
         </div>
       </footer>
