@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function ClinicsSolutionPage() {
   return (
-    <div>
+    <div className="bg-[#0b0f19] text-slate-100 min-h-screen">
       {/* Hero Section */}
       <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
         <span className="inline-block px-3 py-1 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold rounded-full uppercase tracking-wider mb-6">

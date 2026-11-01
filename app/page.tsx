@@ -26,7 +26,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="bg-[#0b0f19] text-slate-100 min-h-screen">
       {/* Invisible JSON-LD Schema Script Tag for Google */}
       <script
         type="application/ld+json"
