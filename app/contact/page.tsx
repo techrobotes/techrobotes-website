@@ -79,10 +79,10 @@ export default function ContactPage() {
         </div>
       </main>
 
-      {/* Footer Section */}
+      {/* Footer Section - Fixed Prerender Build Error */}
       <footer className="w-full border-t border-slate-800/80 bg-slate-950 py-8">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>&copy; {new Date().getFullYear()} TechRobotes. All rights reserved.</p>
+          <p>&copy; 2026 TechRobotes. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/" className="hover:text-slate-300 transition-colors">
               Privacy Policy
