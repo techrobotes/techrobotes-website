@@ -11,9 +11,9 @@ export default function ContactPage() {
           <img 
             src="/logo.png" 
             alt="TechRobotes Logo" 
-            className="h-10 w-auto object-contain" 
+            className="h-14 w-auto object-contain brightness-125 contrast-125 drop-shadow-[0_0_12px_rgba(16,185,129,0.5)] transition-transform hover:scale-105" 
           />
-          <span className="text-xl font-black text-white tracking-tight hidden sm:inline">
+          <span className="text-xl sm:text-2xl font-black text-white tracking-tight hidden sm:inline">
             <span className="text-emerald-400">TechRobotes</span>.io
           </span>
         </a>
