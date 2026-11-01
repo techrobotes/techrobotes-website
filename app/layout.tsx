@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   ],
   icons: {
     icon: [
-      { url: '/logo.png' },
+      { url: '/favicon.png', type: 'image/png' },
       { url: '/favicon.ico' },
     ],
-    shortcut: '/logo.png',
-    apple: '/logo.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
   openGraph: {
     title: 'TechRobotes - WhatsApp AI Chatbot Solution',
