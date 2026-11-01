@@ -21,6 +21,10 @@ export default function RootLayout({
         
         {/* GLOBAL NAVIGATION HEADER (Matched theme background with bg-slate-950) */}
         <nav className="w-full bg-slate-950 border-b border-slate-800/60 sticky top-0 z-50">
+          {/* Top Announcement Bar */}
+          <div className="bg-emerald-600/20 text-emerald-400 text-xs sm:text-sm py-2 text-center border-b border-emerald-500/20 font-medium">
+            🚀 New Feature: Automatic Google Calendar &amp; Live Order Sync is now live!
+          </div>
           <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3 group">
               <img 

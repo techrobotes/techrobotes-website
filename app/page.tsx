@@ -33,11 +33,6 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Top Announcement Bar */}
-      <div className="bg-emerald-600/20 text-emerald-400 text-xs sm:text-sm py-2 text-center border-b border-emerald-500/20 font-medium">
-        🚀 New Feature: Automatic Google Calendar &amp; Live Order Sync is now live!
-      </div>
-
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 pt-20 pb-16 text-center lg:text-left grid lg:grid-cols-2 gap-12 items-center">
         <div>
