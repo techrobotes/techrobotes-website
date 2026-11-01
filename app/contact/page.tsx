@@ -1,66 +1,41 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col justify-between selection:bg-emerald-500 selection:text-slate-950">
-      {/* Header Navigation Matching Landing Page Design */}
-      <header className="sticky top-0 z-50 w-full border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          {/* Brand Logo with TR Circuit Icon */}
-          <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-            <svg
-              className="w-10 h-10 text-emerald-400"
-              viewBox="0 0 100 100"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="6"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M 10 20 L 90 20 M 50 20 L 50 85 M 25 35 L 75 35 M 35 50 L 65 50 M 40 65 L 60 65" />
-              <circle cx="10" cy="20" r="4" fill="currentColor" />
-              <circle cx="90" cy="20" r="4" fill="currentColor" />
-              <circle cx="50" cy="85" r="4" fill="currentColor" />
-            </svg>
-            <span className="text-2xl font-black tracking-tight text-white">
-              TechRobotes<span className="text-emerald-400">.io</span>
-            </span>
-          </Link>
-
-          {/* Navigation Menu */}
-          <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
-            <Link href="/features" className="text-slate-300 hover:text-emerald-400 transition-colors">
-              Features
-            </Link>
-            <Link href="/#how-it-works" className="text-slate-300 hover:text-emerald-400 transition-colors">
-              How It Works
-            </Link>
-            <Link href="/#pricing" className="text-slate-300 hover:text-emerald-400 transition-colors">
-              Pricing
-            </Link>
-            <Link href="/contact" className="text-emerald-400 font-semibold">
-              Contact Us
-            </Link>
-          </nav>
-
-          {/* Launch App Button */}
-          <a
-            href="https://app.techrobotes.io"
-            className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl transition-all shadow-md hover:shadow-emerald-500/20 text-sm"
-          >
-            Launch App
-          </a>
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans flex flex-col justify-between selection:bg-emerald-500 selection:text-slate-950">
+      {/* Navigation Header - Matches Features Page Exactly */}
+      <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between border-b border-slate-800/60 w-full">
+        <a href="/" className="flex items-center gap-3 group">
+          <img 
+            src="/logo.png" 
+            alt="TechRobotes Logo" 
+            className="h-16 w-auto object-contain brightness-130 contrast-125 drop-shadow-[0_0_16px_rgba(16,185,129,0.7)] group-hover:scale-105 transition-all" 
+          />
+          <span className="text-xl sm:text-2xl font-black text-white tracking-tight hidden sm:inline">
+            <span className="text-emerald-400">TechRobotes</span>.io
+          </span>
+        </a>
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+          <a href="/features" className="hover:text-emerald-400 transition-colors">Features</a>
+          <a href="/how-it-works" className="hover:text-emerald-400 transition-colors">How It Works</a>
+          <a href="/pricing" className="hover:text-emerald-400 transition-colors">Pricing</a>
+          <a href="/contact" className="text-emerald-400 font-bold">Contact Us</a>
         </div>
-      </header>
+        <a 
+          href="https://app.techrobotes.io" 
+          className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition-all shadow-lg shadow-emerald-500/20"
+        >
+          Launch App
+        </a>
+      </nav>
 
-      {/* Main Contact Section */}
-      <main className="flex-1 flex items-center justify-center p-6 my-8">
-        <div className="max-w-md w-full bg-slate-900 border border-slate-800 rounded-2xl p-8 space-y-6 shadow-2xl">
+      {/* Main Content Area */}
+      <main className="flex-1 flex items-center justify-center p-6 my-12">
+        <div className="max-w-md w-full bg-slate-900 border border-slate-800 rounded-2xl p-8 space-y-6 shadow-xl">
           <h1 className="text-3xl font-bold text-center text-white">Get in Touch</h1>
-          <p className="text-slate-400 text-center text-sm leading-relaxed">
+          <p className="text-slate-400 text-center text-sm">
             Have custom enterprise requirements or setup questions? Contact our technical team.
           </p>
 
@@ -96,7 +71,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Platform Dashboard CTA */}
+          {/* Dashboard CTA */}
           <a
             href="https://app.techrobotes.io"
             className="w-full block text-center bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 px-4 rounded-xl transition-all shadow-lg hover:shadow-emerald-500/20"
@@ -106,20 +81,20 @@ export default function ContactPage() {
         </div>
       </main>
 
-      {/* Footer Section - Fixed Static Date Prerender */}
-      <footer className="w-full border-t border-slate-800/80 bg-slate-950 py-8">
+      {/* Footer Section */}
+      <footer className="w-full border-t border-slate-800/60 bg-slate-950 py-8">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>&copy; 2026 TechRobotes. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <Link href="/" className="hover:text-slate-300 transition-colors">
+            <a href="/" className="hover:text-slate-300 transition-colors">
               Privacy Policy
-            </Link>
-            <Link href="/" className="hover:text-slate-300 transition-colors">
+            </a>
+            <a href="/" className="hover:text-slate-300 transition-colors">
               Terms of Service
-            </Link>
-            <Link href="/contact" className="hover:text-slate-300 transition-colors">
+            </a>
+            <a href="/contact" className="hover:text-slate-300 transition-colors">
               Support
-            </Link>
+            </a>
           </div>
         </div>
       </footer>
