@@ -11,7 +11,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/contact',
     '/privacy',
     '/terms',
-    '/solutions/clinics', // <--- Added new niche page here
+    '/solutions/clinics',
+    '/solutions/restaurants', // <--- Added new restaurant page here
   ];
 
   return routes.map((route) => ({
