@@ -147,12 +147,12 @@ export default function PricingPage() {
                 Includes 250 AI credits, 1 WhatsApp number, 300 contacts, and basic AI chatbot features to evaluate your workflow.
               </p>
             </div>
-            <a 
-              href="https://app.techrobotes.io" 
-              className="bg-slate-800 hover:bg-slate-700 text-emerald-400 font-semibold px-6 py-2.5 rounded-xl text-sm border border-emerald-500/30 transition-all whitespace-nowrap"
+            <Link 
+              href="/request-plan?plan=Free%20Trial" 
+              className="bg-slate-800 hover:bg-slate-700 text-emerald-400 font-semibold px-6 py-2.5 rounded-xl text-sm border border-emerald-500/30 transition-all whitespace-nowrap text-center"
             >
               Start Free Trial ($0)
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -231,8 +231,8 @@ export default function PricingPage() {
                   </div>
                 </div>
 
-                <a 
-                  href="https://app.techrobotes.io" 
+                <Link 
+                  href={`/request-plan?plan=${plan.name}%20Plan`}
                   className={`mt-8 w-full py-3 rounded-xl font-bold text-sm text-center transition-all block ${
                     plan.popular 
                       ? 'bg-emerald-500 hover:bg-emerald-400 text-slate-950 shadow-lg shadow-emerald-500/20' 
@@ -240,7 +240,7 @@ export default function PricingPage() {
                   }`}
                 >
                   Select {plan.name}
-                </a>
+                </Link>
               </div>
             ))}
           </div>

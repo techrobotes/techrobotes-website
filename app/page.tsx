@@ -46,12 +46,12 @@ export default function Home() {
             Deploy custom AI chatbots on WhatsApp Business. Schedule appointments, process restaurant orders, understand voice messages, and hand over complex chats to live human agents effortlessly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a 
-              href="https://app.techrobotes.io" 
+            <Link 
+              href="/request-plan" 
               className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-8 py-4 rounded-xl text-base transition-all text-center shadow-xl shadow-emerald-500/25"
             >
               Start Free Trial
-            </a>
+            </Link>
             <Link 
               href="/features" 
               className="bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-200 font-semibold px-8 py-4 rounded-xl text-base transition-all text-center"
@@ -127,7 +127,7 @@ export default function Home() {
         <div className="bg-slate-900 border border-slate-800 rounded-3xl p-10">
           <h2 className="text-3xl font-bold text-white mb-4">Start Automating Your WhatsApp Support Today</h2>
           <p className="text-slate-400 text-sm max-w-lg mx-auto mb-6">Experience 24/7 AI-driven customer interaction with zero coding required.</p>
-          <a href="https://app.techrobotes.io" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-8 py-3 rounded-xl transition-all">Get Started Free</a>
+          <Link href="/request-plan" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold px-8 py-3 rounded-xl transition-all">Get Started Free</Link>
         </div>
       </section>
     </div>

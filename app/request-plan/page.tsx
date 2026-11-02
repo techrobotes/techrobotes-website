@@ -6,16 +6,14 @@ export default function RequestPlanPage() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  async function handleSubmit(e) {
+  async function handleSubmit(e: any) {
     e.preventDefault();
     setLoading(true);
 
-    const form = e.target;
+    const form = e.target as HTMLFormElement;
     const data = new FormData(form);
 
     try {
-      // Replace https://formspree.io/f/your-formspree-id with your actual Formspree endpoint if desired,
-      // or handle the post request. 
       const response = await fetch('https://formspree.io/f/mbggppbj', {
         method: 'POST',
         body: data,
