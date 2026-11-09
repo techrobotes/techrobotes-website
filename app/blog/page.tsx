@@ -21,6 +21,18 @@ export default function BlogPage() {
               Discover how integrating automated AI responses on WhatsApp cuts response times to zero and drives conversions around the clock...
             </p>
           </article>
+          <article className="p-6 border border-gray-800 bg-[#111827] rounded-xl shadow-md transition hover:border-gray-700">
+            <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-2 block">CRM & Automation</span>
+            <h2 className="text-2xl font-bold mb-2">
+              <a href="/blog/whatsapp-crm-calendar-integration-guide" className="hover:text-blue-400 transition-colors">
+                Top Benefits of Integrating WhatsApp Business API with CRM & Calendars
+              </a>
+            </h2>
+            <p className="text-gray-400 text-sm mb-4">Published on November 9, 2026 • 5 min read</p>
+            <p className="text-gray-300">
+              Discover how syncing your WhatsApp automated workflows with CRM and calendars drives lead generation and automates booking...
+            </p>
+          </article>
         </div>
       </main>
     </div>
