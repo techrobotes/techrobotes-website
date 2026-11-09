@@ -8,7 +8,7 @@ export default function BlogPage() {
         </p>
 
         <div className="space-y-6">
-          {/* New Article Card */}
+          {/* Published Article Card */}
           <article className="p-6 border border-gray-800 bg-[#111827] rounded-xl shadow-md transition hover:border-gray-700">
             <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-2 block">WhatsApp Automation</span>
             <h2 className="text-2xl font-bold mb-2">
@@ -19,20 +19,6 @@ export default function BlogPage() {
             <p className="text-gray-400 text-sm mb-4">Published on November 9, 2026 • 6 min read</p>
             <p className="text-gray-300">
               Discover how integrating automated AI responses on WhatsApp cuts response times to zero and drives conversions around the clock...
-            </p>
-          </article>
-
-          {/* Previous Article Card */}
-          <article className="p-6 border border-gray-800 bg-[#111827] rounded-xl shadow-md transition hover:border-gray-700">
-            <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-2 block">Automation</span>
-            <h2 className="text-2xl font-bold mb-2">
-              <a href="#" className="hover:text-blue-400 transition-colors">
-                How to Build a WhatsApp AI Chatbot for Business
-              </a>
-            </h2>
-            <p className="text-gray-400 text-sm mb-4">Published on November 9, 2026</p>
-            <p className="text-gray-300">
-              Discover how integrating automated AI responses on WhatsApp can skyrocket your customer conversion rates and streamline support...
             </p>
           </article>
         </div>
