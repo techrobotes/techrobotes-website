@@ -1,3 +1,7 @@
+export const metadata = {
+  title: "How to Automate WhatsApp Customer Support with AI Chatbots (2026 Guide)",
+  description: "Learn how to cut response times to zero and scale your business by integrating 24/7 automated WhatsApp AI chatbots.",
+};
 export default function BlogPost() {
   return (
     <div className="min-h-screen bg-[#0a0f1d] text-white">
