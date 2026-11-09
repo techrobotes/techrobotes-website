@@ -40,6 +40,7 @@ export default function RootLayout({
               <Link href="/features" className="hover:text-emerald-400 transition-colors">Features</Link>
               <Link href="/solutions/clinics" className="hover:text-emerald-400 transition-colors text-emerald-400 font-semibold">Clinics</Link>
               <Link href="/solutions/restaurants" className="hover:text-emerald-400 transition-colors text-emerald-400 font-semibold">Restaurants</Link>
+              <Link href="/blog" className="hover:text-emerald-400 transition-colors">Blog</Link>
               <Link href="/how-it-works" className="hover:text-emerald-400 transition-colors">How It Works</Link>
               <Link href="/pricing" className="hover:text-emerald-400 transition-colors">Pricing</Link>
               <Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact Us</Link>
